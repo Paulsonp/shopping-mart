@@ -1,0 +1,10 @@
+<a class="mat-button" [matMenuTriggerFor]="menu"> {{selectedItem}}
+  <span>
+    <mat-icon>arrow_drop_down</mat-icon>
+  </span>
+</a>
+
+
+<mat-menu #menu="matMenu">
+  <button class="default" (click)="currencyClick(item)" mat-menu-item *ngFor="let item of currency">{{item}}</button>
+</mat-menu>
