@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row fxLayout="row wrap" fxLayoutAlign="space-between center">
+    <span>eCommerce Mart</span>
+    <mat-icon class="example-icon" [matMenuTriggerFor]="menu">color_lens</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-menu #menu="matMenu">
+  <button class="default" mat-menu-item (click)="onSetTheme('default-theme')">Default</button>
+  <button class="dark" mat-menu-item (click)="onSetTheme('dark-theme')">Dark</button>
+  <button class="light" mat-menu-item (click)="onSetTheme('light-theme')">Light</button>
+  <button class="candy" mat-menu-item (click)="onSetTheme('candy-theme')">Candy</button>
+  <button class="alternate" mat-menu-item (click)="onSetTheme('alternate-theme')">Alternate</button>
+</mat-menu>
